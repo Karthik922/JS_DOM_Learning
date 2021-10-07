@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #ecf0f1;
+}
+body{
+    font-family: roboto;
+    width: 1000px;
+    height: auto;
+    padding: 50px;
+    background: white;
+    margin: 0 auto;
+}
+h3{
+    color: #d35400;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 50px;
+
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+table th,td{
+    border: 1px solid grey;
+    padding: 10;
+}
+th{
+    text-decoration: uppercase;
+    text-align: left;
+    width: 30%;
+}
+td{
+    width:60%;
+}
+.img{
+    width: 100px;
+    margin: 15px;
+}

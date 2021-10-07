@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    img{
+    width: 100px;
+    margin: 15px;
+}
+    </style>
+    <script>
+        function getDetails()
+        {
+          //  alert("Test");
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.open("GET","http://localhost/JSON/mobile.json",false);
+          xmlhttp.send();
+          if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+          {
+              var result = xmlhttp.responseText;
+              //alert(result);
+              //document.getElementById("show").innerHTML = result;
+              var o = JSON.parse(result);
+              //alert(o.length);
+            var data='';
+            var img='img';
+            for(var i=0;i<o.length;i++)
+            {
+                data+='<table>\
+                <tr><th>Model</th><td>'+o[i]["model"]+'</td><td rowspan="8"><img src='+o[i]["image"]+' class="img"></td></tr>\
+                <tr><th>Brand</th><td>'+o[i]["brand"]+'</td></tr>\
+                <tr><th>Mrp</th><td>'+o[i]["mrp"]+'</td></tr>\
+                <tr><th>Price</th><td>'+o[i]["price"]+'</td></tr>\
+                <tr><th>Ram</th><td>'+o[i]["ram"]+'</td></tr>\
+                <tr><th>Storage</th><td>'+o[i]["storage"]+'</td></tr>\
+                <tr><th>Camera</th><td>'+o[i]["camera"]+'</td></tr>\
+                <tr><th>Is Available</th><td>'+o[i]["isAvailable"]+'</td></tr>\
+                </table>';
+            }
+            document.getElementById("show").innerHTML = data;
+
+          }
+        }
+    </script>
+</head>
+<body onload="getDetails();">
+    <h3>Mobile Gallery By JSON File</h3>
+    <div id="show">
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+[
+    {
+        "model" : "Remi Note 10",
+        "brand" : "Redmi",
+        "mrp" : 15999.00,
+        "price" : 12499.00,
+        "image" : "https://m.media-amazon.com/images/I/81aQWPoGdOL._SL1500_.jpg",
+        "ram" : "4GB",
+        "storage" : "64gb",
+        "camara" : "48Mp" ,
+        "isAvailable":true
+    },
+    {
+        "model" : "Apple iPhone 11",
+        "brand" : "Apple",
+        "mrp" : 49999.00,
+        "price" : 39999.00,
+        "image" : "https://m.media-amazon.com/images/I/71i2XhHU3pL._SL1500_.jpg",
+        "ram" : "8GB",
+        "storage" : "256gb",
+        "camara" : "48Mp", 
+        "isAvailable":true 
+    },
+    {
+        "model" : "Samsung Galaxy S21",
+        "brand" : "Samsung ",
+        "mrp" : 128999.00,
+        "price" : 105999.00,
+        "image" : "https://m.media-amazon.com/images/I/917nPCOw9-L._SL1500_.jpg",
+        "ram" : "12GB",
+        "storage" : "128gb",
+        "camara" : "48Mp" ,
+        "isAvailable":true
+    },
+    {
+        "model" : "BlackBerry PRD-63040-038 DTEK60",
+        "brand" : "BlackBerry Redmi",
+        "mrp" : 29999.00,
+        "price" : 15999.00,
+        "image" : "https://m.media-amazon.com/images/I/61j5z6fi6BL._SL1500_.jpg",
+        "ram" : "4GB",
+        "storage" : "64gb",
+        "camara" : "48Mp",
+        "isAvailable":false 
+    }
+]
